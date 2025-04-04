@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Service.DTOs
+namespace Service.DTOs.Slider
 {
     public class SliderDto
     {
@@ -15,6 +15,6 @@ namespace Service.DTOs
         public string SignatureImage { get; set; }
 
         public DateTime CreatedAt { get; set; }
-      
+
     }
 }

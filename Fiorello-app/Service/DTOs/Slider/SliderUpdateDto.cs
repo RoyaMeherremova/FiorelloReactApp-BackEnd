@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 
 
-namespace Service.DTOs
+namespace Service.DTOs.Slider
 {
     public class SliderUpdateDto
     {

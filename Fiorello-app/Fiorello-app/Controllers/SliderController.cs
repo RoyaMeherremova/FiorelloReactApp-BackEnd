@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Service.DTOs;
+using Service.DTOs.Slider;
 using Service.Services.Interfaces;
 
 namespace Fiorello_app.Controllers
@@ -14,8 +14,8 @@ namespace Fiorello_app.Controllers
         {
             _service = service;
         }
+
         [HttpGet]
-       
         [ProducesResponseType(statusCode: StatusCodes.Status200OK, Type = typeof(IEnumerable<SliderDto>))]
         [ProducesResponseType(statusCode: StatusCodes.Status404NotFound)]
         public async Task<IActionResult> GetAll()

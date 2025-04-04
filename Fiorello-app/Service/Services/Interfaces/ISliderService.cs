@@ -1,6 +1,4 @@
-﻿
-
-using Service.DTOs;
+﻿using Service.DTOs.Slider;
 
 namespace Service.Services.Interfaces
 {

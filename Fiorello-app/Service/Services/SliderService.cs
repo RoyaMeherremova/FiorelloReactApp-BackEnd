@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using Repository.Repositories.Interfaces;
-using Service.DTOs;
+using Service.DTOs.Slider;
 using Service.Services.Interfaces;
 
 

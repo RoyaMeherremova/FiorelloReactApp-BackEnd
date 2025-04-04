@@ -35,6 +35,17 @@ builder.Services.AddAutoMapper(typeof(MappingProfile));
 // Register Repositories
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddScoped<ISliderRepository, SliderRepository>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IVideoRepository, VideoRepository>();
+builder.Services.AddScoped<IExpertRepository, ExpertRepository>();
+builder.Services.AddScoped<IBlogRepository, BlogRepository>();
+
+
+
+
+
+
 
 // Add Identity
 builder.Services.AddIdentity<AppUser, IdentityRole>()
@@ -42,6 +53,16 @@ builder.Services.AddIdentity<AppUser, IdentityRole>()
 
 // Add Services
 builder.Services.AddScoped<ISliderService, SliderService>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IVideoService, VideoService>();
+builder.Services.AddScoped<IExpertService, ExpertService>();
+builder.Services.AddScoped<IBlogService, BlogService>();
+
+
+
+
+
 
 // Configure JWT Settings
 builder.Services.Configure<JWTSettings>(builder.Configuration.GetSection("JWT"));

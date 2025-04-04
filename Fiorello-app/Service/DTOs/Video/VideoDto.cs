@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Service.DTOs
+namespace Service.DTOs.Video
 {
-    public class SliderCreateDto
+    public class VideoDto
     {
         public string? Title { get; set; }
         public string? Description { get; set; }

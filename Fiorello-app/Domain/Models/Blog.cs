@@ -11,6 +11,9 @@ namespace Domain.Models
     {
         public string? Title { get; set; }
         public string? Description { get; set; }
-        public string Image { get; set; }
+        public int AuthorId { get; set; }
+        public Author Author { get; set; }
+        public ICollection<BlogComment> BlogComments { get; set; }
+        public ICollection<BlogImage> BlogImages { get; set; }
     }
 }
