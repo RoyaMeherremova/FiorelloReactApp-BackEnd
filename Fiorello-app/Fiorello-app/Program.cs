@@ -40,6 +40,10 @@ builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IVideoRepository, VideoRepository>();
 builder.Services.AddScoped<IExpertRepository, ExpertRepository>();
 builder.Services.AddScoped<IBlogRepository, BlogRepository>();
+builder.Services.AddScoped<ISayRepository, SayRepository>();
+builder.Services.AddScoped<IInstagramRepository, InstagramRepository>();
+
+
 
 
 
@@ -58,6 +62,10 @@ builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IVideoService, VideoService>();
 builder.Services.AddScoped<IExpertService, ExpertService>();
 builder.Services.AddScoped<IBlogService, BlogService>();
+builder.Services.AddScoped<ISayService, SayService>();
+builder.Services.AddScoped<IInstagramService, InstagramService>();
+
+
 
 
 

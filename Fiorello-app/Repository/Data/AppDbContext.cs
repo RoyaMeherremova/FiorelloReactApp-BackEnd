@@ -13,6 +13,12 @@ namespace Repository.Data
 
         public DbSet<Blog> Blog { get; set; }
         public DbSet<BlogImage> BlogImage { get; set; }
+        public DbSet<Instagram> Instagram { get; set; }
+        public DbSet<Setting> Setting { get; set; }
+        public DbSet<SectionBackgroundImage> SectionBackgroundImage { get; set; }
+
+        public DbSet<HeaderBackground> HeaderBackground { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
