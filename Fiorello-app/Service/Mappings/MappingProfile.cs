@@ -3,9 +3,12 @@ using Domain.Models;
 using Service.DTOs.Blog;
 using Service.DTOs.Category;
 using Service.DTOs.Expert;
+using Service.DTOs.HeaderBackgroundDto;
 using Service.DTOs.Instagram;
 using Service.DTOs.Product;
 using Service.DTOs.Say;
+using Service.DTOs.SectionBackgroundImage;
+using Service.DTOs.Setting;
 using Service.DTOs.Slider;
 using Service.DTOs.Video;
 
@@ -25,6 +28,12 @@ namespace Service.Mappings
             CreateMap<BlogImage, BlogImageDto>();
             CreateMap<Say, SayDto>();
             CreateMap<Instagram, InstagramDto>();
+            CreateMap<HeaderBackground, HeaderBackgroundDto>();
+            CreateMap<SectionBackgroundImage, SectionBackgroundDto>();
+            CreateMap<Setting, SettingDto>();
+
+
+
 
 
 
